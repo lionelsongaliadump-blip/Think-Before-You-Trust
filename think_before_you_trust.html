@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A student-friendly guide to using AI responsibly for schoolwork and checking AI-generated information.">
+<title>Think Before You Trust | Student AI Guide</title>
+<style>
+:root{--ink:#17243b;--muted:#5c6b80;--blue:#2156d8;--teal:#087f8c;--paper:#f6f8fc;--line:#dce4f0;--white:#fff;--soft:#eaf0ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--blue);text-underline-offset:3px}
+a:focus,button:focus{outline:3px solid #f0b429;outline-offset:3px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:white;padding:.6rem;z-index:5}
+header{background:linear-gradient(135deg,#142d62,#2156d8 68%,#168b9a);color:white;padding:1rem 1.25rem 4.5rem}
+.nav,.hero,.layout,footer{max-width:1080px;margin:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-weight:800;letter-spacing:.02em}.nav a{color:white;text-decoration:none;font-size:.92rem}
+.hero{padding-top:3.2rem;max-width:850px}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;font-weight:800;color:#bcecf0}
+h1{font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.05;letter-spacing:-.04em;margin:.6rem 0 1rem}
+.hero p{font-size:1.12rem;max-width:700px;color:#e9efff}
+.pill{display:inline-block;border:1px solid #8ea8f7;border-radius:99px;padding:.35rem .75rem;margin:.7rem .35rem 0 0;font-size:.85rem}
+main{max-width:1080px;margin:-2rem auto 0;padding:0 1.25rem 3rem}
+.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:1.5rem;align-items:start}
+nav.contents,.panel,.article-card{background:var(--white);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 28px #17243b0a}
+nav.contents{padding:1.2rem;position:sticky;top:1rem}
+nav.contents h2{font-size:1rem;margin:0 0 .6rem}
+nav.contents a{display:block;padding:.35rem 0;text-decoration:none;font-size:.92rem;color:var(--muted)}
+nav.contents a:hover{color:var(--blue)}
+.article-card{padding:clamp(1.2rem,4vw,2.4rem)}
+section{scroll-margin-top:1rem;padding-bottom:1.5rem;margin-bottom:1.5rem;border-bottom:1px solid var(--line)}
+section:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+h2{font-size:clamp(1.45rem,3vw,2rem);line-height:1.2;letter-spacing:-.025em;margin:.2rem 0 .8rem}
+h3{font-size:1.12rem;margin:1.2rem 0 .3rem}
+.lead{font-size:1.08rem;color:#33445d}
+.callout{border-left:4px solid var(--teal);background:#eaf8f8;padding:1rem 1.1rem;border-radius:0 12px 12px 0;margin:1rem 0}
+.warning{border-left-color:#d58a11;background:#fff7e6}
+.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin:1rem 0}
+.step{border:1px solid var(--line);border-radius:14px;padding:1rem;background:#fbfcff}
+.number{display:inline-grid;place-items:center;width:2rem;height:2rem;border-radius:9px;background:var(--soft);color:var(--blue);font-weight:800;margin-bottom:.5rem}
+.step h3{margin:.2rem 0 .35rem}
+ul{padding-left:1.25rem}li{margin:.35rem 0}
+details{border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;margin:.7rem 0;background:#fff}
+summary{font-weight:700;cursor:pointer}
+.sources li{overflow-wrap:anywhere;margin-bottom:.7rem}
+footer{padding:1.5rem 1.25rem 2.5rem;color:var(--muted);font-size:.9rem}
+.small{font-size:.9rem;color:var(--muted)}
+.cta{background:#142d62;color:white;padding:1.3rem;border-radius:16px;margin-top:1rem}
+.cta p{margin:.3rem 0}
+@media(max-width:760px){.layout{grid-template-columns:1fr}nav.contents{position:static}.steps{grid-template-columns:1fr}.nav .nav-link{display:none}header{padding-bottom:3.5rem}}
+@media print{body{background:white}.nav,nav.contents{display:none}header{background:white;color:#17243b;padding:1rem}.hero p,.kicker{color:#33445d}main{margin:0;max-width:none}.layout{display:block}.article-card{box-shadow:none;border:0}.step,.callout{break-inside:avoid}a{color:#17243b}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="nav">
+    <div class="brand">THINK BEFORE YOU TRUST</div>
+    <a class="nav-link" href="#sources">Sources & further reading ↓</a>
+  </div>
+  <div class="hero">
+    <div class="kicker">A student guide to responsible AI use</div>
+    <h1>Use AI to learn.<br>Don't outsource your thinking.</h1>
+    <p>AI can help you brainstorm, understand difficult ideas, and organize your work. But a fluent answer is not automatically a correct one. This guide shows how to use AI as a learning aid while keeping your own judgment at the center.</p>
+    <span class="pill">For schoolwork</span><span class="pill">Practical tips</span><span class="pill">Free to use</span>
+  </div>
+</header>
+<main id="main">
+<div class="layout">
+  <nav class="contents" aria-label="Contents">
+    <h2>On this page</h2>
+    <a href="#basics">1. What AI is good for</a>
+    <a href="#limits">2. Know its limits</a>
+    <a href="#verify">3. Check the information</a>
+    <a href="#citations">4. Check citations</a>
+    <a href="#prompting">5. Ask better questions</a>
+    <a href="#integrity">6. Academic integrity</a>
+    <a href="#privacy">7. Protect your privacy</a>
+    <a href="#checklist">Quick checklist</a>
+    <a href="#sources">Sources & further reading</a>
+  </nav>
+  <article class="article-card">
+    <section id="basics">
+      <h2>1. What is AI useful for?</h2>
+      <p class="lead">Think of generative AI as an assistant for exploring ideas—not as an unquestionable authority or a replacement for your learning.</p>
+      <ul>
+        <li><strong>Understand concepts:</strong> Ask for a simpler explanation, an analogy, or a step-by-step example.</li>
+        <li><strong>Brainstorm:</strong> Generate possible topics, research questions, outlines, or counterarguments.</li>
+        <li><strong>Practise:</strong> Request practice questions, flashcards, or feedback on your reasoning.</li>
+        <li><strong>Improve a draft:</strong> Ask for feedback on clarity and organization, then decide which suggestions make sense.</li>
+        <li><strong>Plan research:</strong> Use AI to suggest keywords and search strategies, then find and read the actual sources yourself.</li>
+      </ul>
+      <div class="callout"><strong>Keep ownership of your work.</strong> You should be able to explain, defend, and take responsibility for the ideas you submit.</div>
+    </section>
+    <section id="limits">
+      <h2>2. Know the limits of AI</h2>
+      <p>AI tools can produce answers that sound confident while containing mistakes. They may omit context, reflect bias, provide outdated information, misinterpret a question, or invent details and references.</p>
+      <ul>
+        <li><strong>Fluent does not mean factual.</strong> Polished writing is not evidence that a statement is true.</li>
+        <li><strong>AI may miss context.</strong> It might misunderstand your instructions or leave out an important perspective.</li>
+        <li><strong>Answers can be outdated.</strong> Current laws, statistics, events, and scientific developments need up-to-date sources.</li>
+        <li><strong>AI can agree with a mistaken assumption.</strong> Ask what evidence supports a claim and consider alternative explanations.</li>
+      </ul>
+      <div class="callout warning"><strong>Remember:</strong> Asking the same AI tool to confirm its own answer is not independent verification. Look for evidence outside that answer.</div>
+    </section>
+    <section id="verify">
+      <h2>3. How to check AI-generated information</h2>
+      <p>Use this simple process when an AI response includes factual claims that matter to your assignment.</p>
+      <div class="steps">
+        <div class="step"><div class="number">1</div><h3>Identify the claim</h3><p>Pick out the key fact, statistic, quotation, date, or explanation you may rely on. Break a long answer into separate claims.</p></div>
+        <div class="step"><div class="number">2</div><h3>Find an independent source</h3><p>Search for the topic yourself. Prefer original documents, official data, scholarly publications, textbooks, or reputable reporting suited to the subject.</p></div>
+        <div class="step"><div class="number">3</div><h3>Read the source</h3><p>Don't rely only on a search snippet or an AI summary. Open the source and check whether it actually supports the claim.</p></div>
+        <div class="step"><div class="number">4</div><h3>Compare and decide</h3><p>Check important claims against another reliable source when appropriate. Correct, qualify, or leave out claims that remain unsupported.</p></div>
+      </div>
+      <h3>What makes a source worth using?</h3>
+      <ul>
+        <li><strong>Authority:</strong> Who wrote or published it? Are they qualified or responsible for the information?</li>
+        <li><strong>Evidence:</strong> Does it show data, references, documents, or a clear basis for its claims?</li>
+        <li><strong>Currency:</strong> Is it recent enough for your topic?</li>
+        <li><strong>Relevance:</strong> Does it answer the question you are researching?</li>
+        <li><strong>Purpose:</strong> Is it informing, persuading, selling, or advocating for something?</li>
+      </ul>
+    </section>
+    <section id="citations">
+      <h2>4. Check AI-generated citations and quotations</h2>
+      <p>A reference can look academic and still be inaccurate or nonexistent. Even when a real publication exists, the AI may give the wrong author, title, date, journal, link, or summary.</p>
+      <ol>
+        <li>Search the exact article or book title in a search engine, library catalogue, or scholarly database.</li>
+        <li>Confirm that the author, title, publication, date, and DOI or URL match the actual source.</li>
+        <li>Open the source and read the relevant section.</li>
+        <li>Check that the source supports the statement you want to use—not merely that it discusses a similar topic.</li>
+        <li>If you cannot locate or verify the reference, do not present it as a confirmed source. Find another source instead.</li>
+      </ol>
+      <div class="callout"><strong>Important:</strong> Cite the original source you actually consulted, following your teacher's required citation style. Do not treat an AI-generated bibliography as automatically verified.</div>
+    </section>
+    <section id="prompting">
+      <h2>5. Ask better questions</h2>
+      <p>Clear prompts can make AI more useful, but they cannot guarantee that its answers are correct.</p>
+      <h3>Try including these details</h3>
+      <ul>
+        <li><strong>Task:</strong> Explain, compare, brainstorm, quiz me, or give feedback.</li>
+        <li><strong>Context:</strong> State your topic and what you already understand.</li>
+        <li><strong>Limits:</strong> Specify length, level, format, or what the answer should avoid.</li>
+        <li><strong>Learning goal:</strong> Ask for an explanation or hints that help you understand, not only a finished answer.</li>
+      </ul>
+      <details><summary>Example prompt: learning a difficult concept</summary><p>“Explain this concept at a senior high school level. Give one example, point out common misunderstandings, and then ask me three questions to check my understanding.”</p></details>
+      <details><summary>Example prompt: checking a factual claim</summary><p>“List the factual claims in this paragraph that need checking. For each claim, suggest search terms and the type of reliable source I should look for. Do not assume a claim is true just because it appears in this paragraph.”</p></details>
+      <details><summary>Example prompt: improving a draft</summary><p>“Give feedback on the clarity and organization of my draft. Explain the reasons for each suggestion, and do not rewrite the entire piece for me.”</p></details>
+    </section>
+    <section id="integrity">
+      <h2>6. Use AI with academic integrity</h2>
+      <ul>
+        <li>Follow your teacher's instructions and your school's rules about permitted AI use.</li>
+        <li>Do not submit AI-generated work as entirely your own if that misrepresents how it was produced.</li>
+        <li>Understand and check any information you include in your work.</li>
+        <li>Disclose AI assistance when your teacher or assignment requires it.</li>
+        <li>Do not invent sources, data, interviews, observations, or research results.</li>
+        <li>Use AI to support your learning—not to bypass the learning the assignment is designed to develop.</li>
+      </ul>
+      <p>Rules differ across schools, subjects, and assignments. When unsure, ask your teacher what forms of AI assistance are allowed.</p>
+    </section>
+    <section id="privacy">
+      <h2>7. Protect your privacy</h2>
+      <p>Before entering information into an AI tool, consider where it will go and how the service may handle it.</p>
+      <ul>
+        <li>Do not enter passwords, private messages, student ID numbers, personal records, or sensitive details about yourself or others.</li>
+        <li>Remove identifying information from examples whenever possible.</li>
+        <li>Check the tool's privacy settings and terms, and follow school guidance.</li>
+        <li>Use only tools and accounts that meet your age requirements and your school's rules.</li>
+      </ul>
+    </section>
+    <section id="checklist">
+      <h2>Your quick pre-submission checklist</h2>
+      <p>Before using AI-assisted information in schoolwork, ask yourself:</p>
+      <ul>
+        <li>□ Do I understand the information I am using?</li>
+        <li>□ Have I independently checked important facts and claims?</li>
+        <li>□ Have I opened and checked the sources I intend to cite?</li>
+        <li>□ Does each source actually support the claim I attribute to it?</li>
+        <li>□ Have I considered missing context, bias, or outdated information?</li>
+        <li>□ Am I following my teacher's rules for AI use and disclosure?</li>
+        <li>□ Have I protected private or identifying information?</li>
+      </ul>
+      <div class="cta"><h2 style="margin-top:0">Use AI thoughtfully.</h2><p>AI can help you move forward—but your judgment, evidence, and responsibility still matter.</p></div>
+    </section>
+    <section id="sources">
+      <h2>Sources & further reading</h2>
+      <p class="small">This student guide summarizes recommendations from educational and academic-library resources. Consult the original pages for more detail.</p>
+      <ul class="sources">
+        <li><a href="https://guides.lib.uw.edu/research/evaluate/AI" target="_blank" rel="noopener noreferrer">University of Washington Libraries — Evaluating Information: Generative AI</a></li>
+        <li><a href="https://libguides.uvic.ca/AI_Tools/Evaluating" target="_blank" rel="noopener noreferrer">University of Victoria Libraries — Evaluating Generative AI</a></li>
+        <li><a href="https://guides.library.ubc.ca/EvaluatingSources/GenerativeAI" target="_blank" rel="noopener noreferrer">University of British Columbia Library — Evaluating Sources: Generative AI</a></li>
+        <li><a href="https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research" target="_blank" rel="noopener noreferrer">UNESCO — Guidance for Generative AI in Education and Research</a></li>
+        <li><a href="https://guides.library.ualberta.ca/generative-ai/evaluation" target="_blank" rel="noopener noreferrer">University of Alberta Libraries — Evaluating AI-Generated Content</a></li>
+      </ul>
+      <p class="small"><strong>Research-use note:</strong> This is an educational resource, not a guarantee that every AI answer can be verified or that every source is reliable. Students should follow their teachers' instructions and evaluate evidence according to the needs of each assignment.</p>
+    </section>
+  </article>
+</div>
+</main>
+<footer>
+  <p><strong>THINK BEFORE YOU TRUST</strong> · Student guide to responsible AI use</p>
+  <p>Prepared as an educational resource concept for a senior high school research project. Review the content with your teacher before distributing it as an official school resource.</p>
+</footer>
+</body>
+</html>
